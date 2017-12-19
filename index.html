@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <h1 style="color: #cc6600; font-family:sans-serif; text-align:center;">CARE HONDURAS CONTRUBUCIÓN SUNBURST</h1>
+	<script src="https://edgonhn.github.io/CAREHN2020/d3.v3.min.js"></script>
+    <script src="https://edgonhn.github.io/CAREHN2020/jquery-1.11.1.min.js"></script>
+    <script src="https://edgonhn.github.io/CAREHN2020/jquery.dataTables.min.js"></script>
+    
+    <link rel="stylesheet" type="text/css" href="d3_sunburst.css"/>
+    <link rel="stylesheet" type="text/css"
+      href="https://edgonhn.github.io/CAREHN2020/jquery.dataTables.css"/>
+    <script src="run_datatable.js"></script>
+  </head>
+  <body>
+  
+    <div class="container">
+        <div id="figure">
+            <div class="sunburst_plot">
+                <div id="main">
+                  <div id="sequence"></div>
+                  <div id="chart">
+                  </div>
+                  <div id="explanation" style="visibility: visible;">
+                    <span id="percentage"></span><br/>
+                        CARE 2020 Strategy
+                  </div>
+                  <div id="icon">
+                     <img src="CARE Logo.png", height='90', width='90'>
+                 </div>
+                </div>
+                <div id="sidebar" style="visibility: hidden;">>
+                  <input type="checkbox" id="togglelegend"> Legend<br/>
+                  <div id="legend" style="visibility: hidden;"></div>
+                </div>
+            </div>
+            <div id="demo"></div>
+            <script type="text/javascript" src="colors.js"></script>
+            <script type="text/javascript" src="d3_sunburst.js"></script>
+            <script type="text/javascript">
+              d3.select(self.frameElement).style("height", "1300px");
+            </script>
+        </div>
+    </div>
+  </body>
+</html>
