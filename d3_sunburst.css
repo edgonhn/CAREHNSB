@@ -71,7 +71,7 @@
   width: 100px;
   text-align: center;
   color: #667;
-  z-index: -1;
+  z-index: 0;
 }
 
 #demo {
